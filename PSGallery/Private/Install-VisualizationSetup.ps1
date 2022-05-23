@@ -30,7 +30,7 @@ function Install-VisualizationSetup {
     [CmdletBinding()]
     param (
         [parameter(Mandatory = $false, ValueFromPipeline = $true)][string]$MonitoringPath = (get-location).Path,
-        [parameter(Mandatory = $false, ValueFromPipeline = $true)][string]$GrafanaVersion = "https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-5.2.2.windows-amd64.zip",
+        [parameter(Mandatory = $false, ValueFromPipeline = $true)][string]$GrafanaVersion = "https://dl.grafana.com/enterprise/release/grafana-enterprise-8.5.3.windows-amd64.zip",
         [parameter(Mandatory = $false, ValueFromPipeline = $true)][string]$InfluxVersion = "https://dl.influxdata.com/influxdb/releases/influxdb-1.6.1_windows_amd64.zip",
         [parameter(Mandatory = $false, ValueFromPipeline = $true)][string]$NSSMVersion = "https://nssm.cc/release/nssm-2.24.zip"
     )
